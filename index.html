@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Image Gallery</h1>
+    <p>A simple responsive gallery with lightbox & filters</p>
+  </header>
+
+  <!-- Category filter buttons -->
+  <nav class="filters" aria-label="Image categories">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+  </nav>
+
+  <!-- Gallery grid -->
+  <main class="gallery" id="gallery">
+    <!-- Nature -->
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=70" alt="Mountain lake at sunset" />
+    </figure>
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=800&q=70" alt="Green forest path" />
+    </figure>
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=70" alt="Mountain valley" />
+    </figure>
+    <figure class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&q=70" alt="Lake and mountains" />
+    </figure>
+
+    <!-- City -->
+    <figure class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=70" alt="City skyline at night" />
+    </figure>
+    <figure class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=70" alt="New York skyline" />
+    </figure>
+    <figure class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=70" alt="City street with cars" />
+    </figure>
+    <figure class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?w=800&q=70" alt="Tall buildings from below" />
+    </figure>
+
+    <!-- Animals -->
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&q=70" alt="Fox in the wild" />
+    </figure>
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=70" alt="Deer in a forest" />
+    </figure>
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800&q=70" alt="Elephant close-up" />
+    </figure>
+    <figure class="gallery-item" data-category="animals">
+      <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=800&q=70" alt="Owl portrait" />
+    </figure>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-btn close-btn" id="closeBtn" aria-label="Close">&times;</button>
+    <button class="lightbox-btn prev-btn" id="prevBtn" aria-label="Previous">&#10094;</button>
+    <img class="lightbox-img" id="lightboxImg" alt="" />
+    <button class="lightbox-btn next-btn" id="nextBtn" aria-label="Next">&#10095;</button>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Student Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
