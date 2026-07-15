@@ -7,3 +7,10 @@ This project is submitted as part of the CodeAlpha Frontend Development Internsh
 - Category filter
 - Lightbox preview
 - Previous/Next navigation
+
+#Technology Used
+- HTML
+- CSS
+- JavaScript
+# Author
+Sudhanshu Suryawanshi
