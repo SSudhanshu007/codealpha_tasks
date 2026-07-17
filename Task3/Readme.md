@@ -11,7 +11,7 @@ A responsive music player built using HTML, CSS, and JavaScript.
 - Volume control
 
 # Technologies Used
-- HTML5
+- HTML
 - CSS3
 - JavaScript
 
