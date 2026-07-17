@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="player-wrapper">
+    <section class="player">
+
+      <div class="cover-container">
+        <img id="cover" class="cover" src="" alt="Album Cover">
+      </div>
+
+      <div class="song-info">
+        <h1 id="title" class="title">Song Title</h1>
+        <p id="artist" class="artist">Artist Name</p>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-section">
+        <div class="progress-bar" id="progressBar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="time-row">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="prevBtn" class="control-btn" aria-label="Previous">
+          &#9198;
+        </button>
+
+        <button id="playBtn" class="control-btn play-btn" aria-label="Play">
+          &#9654;
+        </button>
+
+        <button id="nextBtn" class="control-btn" aria-label="Next">
+          &#9197;
+        </button>
+      </div>
+
+      <!-- Volume -->
+      <div class="volume-section">
+        <span>&#128266;</span>
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="100"
+          value="70"
+        >
+      </div>
+
+      <!-- Playlist -->
+      <div class="playlist-section">
+        <h2 class="playlist-title">Playlist</h2>
+        <ul id="playlist" class="playlist"></ul>
+      </div>
+
+      <audio id="audio"></audio>
+
+    </section>
+
+    <footer class="footer">
+      Made by Sudhanshu Suryawanshi
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
