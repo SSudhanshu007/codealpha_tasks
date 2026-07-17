@@ -3,20 +3,20 @@ var songs = [
   {
     title: "Morning Breeze",
     artist: "Ethan Brooks",
-    src: "Resources/Song1.mp3",
-    cover: "Resources/Image1.jpg"
+    src: "Song1.mp3",
+    cover: "Image1.jpg"
   },
   {
     title: "Golden Sky",
     artist: "Luna Harper",
-    src: "Resources/Song2.mp3",
-    cover: "Resources/Image2.avif"
+    src: "Song2.mp3",
+    cover: "Image2.avif"
   },
   {
     title: "Midnight Drive",
     artist: "Noah Carter",
-    src: "Resources/Song3.mp3",
-    cover: "Resources/Image3.jpg"
+    src: "Song3.mp3",
+    cover: "Image3.jpg"
   }
 ];
 
